@@ -143,7 +143,7 @@ public class QuestionActivity extends AppCompatActivity {
                 clickFlag = true;
                 quizIndex++;
                 answerCount++;
-                changeButtonColor(alpha, Color.BLACK);
+                changeButtonColor("e", Color.BLACK);
                 quiz();
             }
         });
@@ -159,6 +159,11 @@ public class QuestionActivity extends AppCompatActivity {
         }else if(alpha.equals("c")){
             buttonC.setTextColor(c);
         }else if(alpha.equals("d")){
+            buttonD.setTextColor(c);
+        }else{
+            buttonA.setTextColor(c);
+            buttonB.setTextColor(c);
+            buttonC.setTextColor(c);
             buttonD.setTextColor(c);
         }
     }
