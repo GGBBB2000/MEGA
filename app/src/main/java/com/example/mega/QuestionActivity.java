@@ -1,8 +1,10 @@
 package com.example.mega;
 
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -114,6 +116,13 @@ public class QuestionActivity extends AppCompatActivity {
             nextButton.setVisibility(View.INVISIBLE);
         }catch(Exception e){
             Log.e("Exception", e.toString() + "quizIndex:" + quizIndex);
+            AlertDialog.Builder builder = new AlertDialog.Builder(this);
+            builder.setMessage(e.toString() + ": Fatal Exception at quizIndex:" + quizIndex)
+                    .setPositiveButton("done", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int id) {
+                        }
+                    });
+            builder.show();
         }
     }
 

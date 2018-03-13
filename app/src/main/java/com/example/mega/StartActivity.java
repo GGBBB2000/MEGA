@@ -14,6 +14,8 @@ public class StartActivity extends AppCompatActivity {
         Button startButton10 = findViewById(R.id.startButton10);
         Button startButton20 = findViewById(R.id.startButton20);
         Button startButton30 = findViewById(R.id.startButton30);
+        Button startButton40 = findViewById(R.id.startButton40);
+        Button startButton50 = findViewById(R.id.startButton50);
         startButton10.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -35,6 +37,22 @@ public class StartActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(StartActivity.this, QuestionActivity.class);
                 intent.putExtra("value", 30);
+                startActivity(intent);
+            }
+        });
+        startButton40.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(StartActivity.this, QuestionActivity.class);
+                intent.putExtra("value", 40);
+                startActivity(intent);
+            }
+        });
+        startButton50.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(StartActivity.this, QuestionActivity.class);
+                intent.putExtra("value", 50);
                 startActivity(intent);
             }
         });
