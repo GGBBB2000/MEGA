@@ -42,3 +42,29 @@
 42/a/A 10 kilometer race will be held on July 14 ----- funds for the hospital's new pediatrics wing./to raise/is raising/raises/raised/病院の小児科病棟新設資金の調達を置く的とした１０キロマラソンが。７月１４日に開催される
 43/d/The next time there is a surplus in the budget, either a new copy machine ----- a printer should be purchased./and/so/but/or/次に予算が残った時には、新しいコピー機かプリンターのどちらかを購入すべきである
 44/c/The Calico Theater features live ----- of traditional dances every weekday throughout the summer./performed/performs/performances/performer/Calico劇場では、夏の間は平日毎日、伝統舞踊のライブ公演が行われます
+45/c/Our latest MP3 plyer is available in a ----- of colors, so your device can express your personal style./shade/gathering/variety/flaor/弊社の最新MP3プレイヤーには様々な色が揃っているので、自分のスタイルが表現できます
+46/a/Please rest assured that all personal information on your medical history form will be kept strictly -----./confidential/confidentially/confiding/confides/あなたの病歴に記載のすべての個人情報は、厳重に機密として扱われますのでご安心ください
+47/b/The pamphlet sent out by the Department of Transportation gives tips on how to drive ----- in snow and ice./richly/safely/lively/constantly/運輸省から発送されたパンフレットには、氷や雪の上を安全に運転するコツが載っている
+48/a/A popular dining destination for couples as well as groups, La Mer is a restaurant ----- specializes in fresh seafood dishes./that/them/whose/where/団体客だけでなくカップルにも人気がある料理店La Merは、新鮮な海鮮料理が専門のレストランです
+49/b/Access to the Prime-Air lounge is granted ----- to first class passengers, who must show their boarding passes for entry./innner/only/whether/quite/Prime-Air ラウンジの使用はファーストクラスのお客様にのみ許可されており、入場時に搭乗券を見せなければならない
+50/a/As an apology for this inconvenience, you will be given a ----- gift voucher that is valid for the next 12 months./complimentary/paying/continual/momentary/今回のご迷惑に対する謝罪として、１２ヶ月間有効の無料商品券を差し上げます
+51/a/The policy indicates that laboratory ----- must wear protective clothing at all times while in the lab./assistants/assists/assisting/assistance/規定上、研究室の助手は全員、常に防護服を着用しなければならない
+52/b/Employees cannnot access the Internet while the test of the ----- installed network system is being carried out./soon/recently/afterward/immediately/最近インストールされたネットワークシステムの検査が実施されている間、従業員がインターネットにアクセスすることはできません
+53/a/The Department of Health created a ----- plan for enforcing the stricter food safety regulations for restaurants./comprehensive/comprehensiveness/most comprehensively/comprehensively/保険省はレストランに対する、より厳格な食品安全規定を施行するための総合計画を作成した
+54/d/Ace Tours sends a copy of your travel ----- directly to your e-mail so that it can be accessed from a computer or smartphone at any time./supply/agency/holiday/itinerary/Ace Toursは直接お客様のメールアドレスに旅行日程表をお送りしますので、いつでもコンピューターやスマートフォンからご覧いただけます
+55/a/The poor weather conditions over the past week ----- the construction crew from making any progress on the Monroe Building./have prevented/prevention/has been prevented/preventable/先週の悪天候のせいで、建設工事の作業者達はMonroeビルの作業を進めることができなかった
+56/b/----- learning to speak another language, reading regularlu is a great way to increase vocabulary./How/When/Since/During/外国語会話を学ぶ時は、定期的に読書をすることが語彙力をつけるのは良い方法です
+57/b/The Donaldson Foundation donated tousands of dollars to the Cedarburg Library, ----- plans to create a computer lab for public use./what/which/they/who/Donaldson財団はCedarburg図書館に数千ドルを寄付したが、この図書館は一般利用のためにコンピュータ施設を作る計画だ
+58/d/Fifth Street Market offers significant discounts on ----- merchandise, including bottles of wine with ripped labels./damages/damage/damaging/damaged/Fifth Streetマーケットは、ラベルの剥がれたワインなど傷んだ商品に大幅な値引きをする
+59/b/If you find an error on our Web site, please notify us and we will make the correction -----./prompting/promptly/prompt/prompted/弊社のウェブサイトにミスを見つけられた場合、ご連絡いただければ即座に直すようにいたします
+60/c/Employees will attend several training sessions ----- their first month of employment in order to learn about company products and policies./toward/among/throughout/near/社員は会社の製品と方針について学ぶため、入社後最初の１ヶ月はずっといくつかの研修に出席することになります
+61/d/Government regulators have finally ----- that human activities are harming the environment and tighter pollution controls are needed./recognition/to recognize/recognizing/recognized/政府の規制当局は、人間活動が環境を破壊しており、さらに厳しい汚染規制が必要であることを最終的に認めた
+62/a/Eliot Durnishings makes a variety of household products, but sales have increased ----- for its custom storage units./most rapidly/rapidness/rapidity/more rapid/Elliot Furnishingsは様々な家庭用品を作っているが、特別注文の収納用品の売り上げが一番早く増加した
+63/d/On the final evening of the conference, Laurie Caldwell will ----- a keynote adress about improving trade relations./speak/succeed/participate/present/会議最終日には、Laurie Caldwellが貿易関係の改善について基調講演をします
+64/c/After the -----. Briarwood Inc.'s head office will be close to public transportation./area/residence/relocation/position/移転後Briarwood社の本社は公共交通機関に近くなります
+65/b/Survey respondents will receive no further mail from our company ----- they agreed to have their name on our mailing list./against/unless/despite/without/調査の回答者がメーリングリストに名前を載せることに同意しない限り、弊社からこれ以上メールを送付することはありません
+66/c/The numerous hurricanes in th region caused little property damage but had an ----- effect on the local tourism industry./affordable/affluent/adverse/advised/その地域の多くのハリケーンは物的損害は与えなかったものの、現地の観光産業に悪影響を与えた
+67/b/During the homeowners association meeting, Rick Parsons ----- the need to replace the burnt out security lights in front of Building 102./gave out/brought up/let in/broke off/住宅所有者組合の会議中、Rick Parsonsは１０２号棟の前にある、切れた保安等を取り替える必要性について、話を持ち出した
+68/b/According to the company's owner, Tom Diaz, customers can save money on the shelving units by performing the assembly -----./him/themselbes/himself/theirs/会社オーナーのTom Diazによると、顧客が棚を自分で組み立てることでコストを削減できるという
+69/a/Due to a number of issues with the new telephone network, the office had to ----- to its former system./revert/resist/recover/request/新しい電話システムに幾つかの問題があったため、事務所は以前システムに戻さねばならなかった
+70/b/Anyone who signs up for a 6-month membership at Rock Gym will receive a free ----- from a personal trainer./consulted/consultation/consultant/consults/Rock Gymで６ヶ月会員に申し込めば、誰でも個人トレーナーに無料で相談に乗ってもらうことができる
