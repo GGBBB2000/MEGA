@@ -95,21 +95,25 @@ public class QuestionActivity extends AppCompatActivity {
 
     public void quiz(){// id/answer/question/choice1/choice2/choice3/choice4/Japanese
                        // 0  1      2        3       4       5       6       7
-        Button nextButton = findViewById(R.id.nextButton);
-        Intent former = getIntent();
-        Intent intent = new Intent(getApplication(), resultActivity.class);
-        if(quizIndex < question.size() && answerCount < former.getIntExtra("value", question.size())) {
-            questionView.setText(question.get(quizIndex).split("/", 0)[2]);
-            buttonA.setText("(A)" + (question.get(quizIndex).split("/", 0))[3]);
-            buttonB.setText("(B)" + (question.get(quizIndex).split("/", 0))[4]);
-            buttonC.setText("(C)" + (question.get(quizIndex).split("/", 0))[5]);
-            buttonD.setText("(D)" + (question.get(quizIndex).split("/", 0))[6]);
-        }else{
-            intent.putExtra("value", (float)result / (float)former.getIntExtra("value", 1));
-            startActivity(intent);
-            finish();
+        try {
+            Button nextButton = findViewById(R.id.nextButton);
+            Intent former = getIntent();
+            Intent intent = new Intent(getApplication(), resultActivity.class);
+            if (quizIndex < question.size() && answerCount < former.getIntExtra("value", question.size())) {
+                questionView.setText(question.get(quizIndex).split("/", 0)[2]);
+                buttonA.setText("(A)" + (question.get(quizIndex).split("/", 0))[3]);
+                buttonB.setText("(B)" + (question.get(quizIndex).split("/", 0))[4]);
+                buttonC.setText("(C)" + (question.get(quizIndex).split("/", 0))[5]);
+                buttonD.setText("(D)" + (question.get(quizIndex).split("/", 0))[6]);
+            } else {
+                intent.putExtra("value", (float) result / (float) former.getIntExtra("value", 1));
+                startActivity(intent);
+                finish();
+            }
+            nextButton.setVisibility(View.INVISIBLE);
+        }catch(Exception e){
+            Log.e("Exception", e.toString() + "quizIndex:" + quizIndex);
         }
-        nextButton.setVisibility(View.INVISIBLE);
     }
 
 
@@ -120,7 +124,7 @@ public class QuestionActivity extends AppCompatActivity {
             answerView.setText(question.get(quizIndex).split("/", 0)[7]);
             clickFlag = false;
             result++;
-        }else{
+        }else if (!alpha.equals((question.get(quizIndex).split("/", 0)[1])) && clickFlag){
             resultView.setText("不正解です。正解は" + question.get(quizIndex).split("/", 0)[1]);
             answerView.setText(question.get(quizIndex).split("/", 0)[7]);
             clickFlag = false;
