@@ -2,6 +2,7 @@ package com.example.mega;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -118,15 +119,17 @@ public class QuestionActivity extends AppCompatActivity {
 
 
 
-    public void quizJudge(String alpha){
+    public void quizJudge(final String alpha){
         if(alpha.equals((question.get(quizIndex).split("/", 0))[1]) && clickFlag){
             resultView.setText("正解です");
             answerView.setText(question.get(quizIndex).split("/", 0)[7]);
+            changeButtonColor(alpha, Color.RED);
             clickFlag = false;
             result++;
         }else if (!alpha.equals((question.get(quizIndex).split("/", 0)[1])) && clickFlag){
             resultView.setText("不正解です。正解は" + question.get(quizIndex).split("/", 0)[1]);
             answerView.setText(question.get(quizIndex).split("/", 0)[7]);
+            changeButtonColor(alpha, Color.BLUE);
             clickFlag = false;
         }
 
@@ -140,8 +143,23 @@ public class QuestionActivity extends AppCompatActivity {
                 clickFlag = true;
                 quizIndex++;
                 answerCount++;
+                changeButtonColor(alpha, Color.BLACK);
                 quiz();
             }
         });
+    }
+
+
+
+    public void changeButtonColor(String alpha, int c){
+        if(alpha.equals("a")){
+            buttonA.setTextColor(c);
+        }else if(alpha.equals("b")){
+            buttonB.setTextColor(c);
+        }else if(alpha.equals("c")){
+            buttonC.setTextColor(c);
+        }else if(alpha.equals("d")){
+            buttonD.setTextColor(c);
+        }
     }
 }
