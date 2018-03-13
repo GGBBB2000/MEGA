@@ -68,3 +68,8 @@
 68/b/According to the company's owner, Tom Diaz, customers can save money on the shelving units by performing the assembly -----./him/themselbes/himself/theirs/会社オーナーのTom Diazによると、顧客が棚を自分で組み立てることでコストを削減できるという
 69/a/Due to a number of issues with the new telephone network, the office had to ----- to its former system./revert/resist/recover/request/新しい電話システムに幾つかの問題があったため、事務所は以前システムに戻さねばならなかった
 70/b/Anyone who signs up for a 6-month membership at Rock Gym will receive a free ----- from a personal trainer./consulted/consultation/consultant/consults/Rock Gymで６ヶ月会員に申し込めば、誰でも個人トレーナーに無料で相談に乗ってもらうことができる
+71/d/During the banquet, Ms.Russo will accept an award for her outstanding ----- to Norfolk Marketing./qualifications/supplements/abilities/contributions/RussoさんはNorflok Marketing社への多大な貢献により、祝宴の席で賞を受賞します
+72/a/Despite increased competition, The Sports Shop's annual revenue was ----- higher than it was last year./considerably/considering/considers/consider/競争が激しかったにも関わらず、スポーツショップの年間収入は昨年よりかなり高かった
+73/c/Consumers are rejecting fast food purchases and opting for healthier choices ----- fresh fruits and vegetables./nevertheless/in fact/such as/in case of/消費者はファストフードの購入を減らし、新鮮な果物や野菜のような健康食品を選んでいる
+74/d/Should the television be ----- upon delivery, notify our store immediately to receive a replacement./distrustful/incapable/neglectful/defective/配送直後にテレビに欠陥があった場合、すぐに当店まで連絡し交換をしてください
+75/b/The Imes Theater, ----- which the concert will be held, is equipped with a state-of-the-art sound system./down/in/until/from/コンサート開催予定のImes Theaterは、最新式の音響システムが装備されている
