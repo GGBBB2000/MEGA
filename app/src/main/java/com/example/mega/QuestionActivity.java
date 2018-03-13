@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
+import android.os.CountDownTimer;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -24,25 +25,29 @@ import java.util.Collections;
 
 public class QuestionActivity extends AppCompatActivity {
     ArrayList<String> question = new ArrayList<String>();
-    TextView questionView;
-    TextView resultView;
-    TextView answerView;
-    Button buttonA, buttonB, buttonC, buttonD;
+    TextView questionView, resultView, answerView, timerView;
+    Button buttonA, buttonB, buttonC, buttonD, nextButton;
     int result = 0;
     Boolean clickFlag = true;
     int quizIndex = 0;
     int answerCount = 0;
+    CountDown countDown;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_question);
+        long countNumber = 15000;
+        long interval = 10;
+        countDown = new CountDown(countNumber, interval);
         questionView = findViewById(R.id.question);
         resultView = findViewById(R.id.result);
         answerView = findViewById(R.id.answer);
+        timerView = findViewById(R.id.timerView);
         buttonA = findViewById(R.id.buttonA);
         buttonB = findViewById(R.id.buttonB);
         buttonC = findViewById(R.id.buttonC);
         buttonD = findViewById(R.id.buttonD);
+        nextButton = findViewById(R.id.nextButton);
         getQuestion();
         quiz();
         buttonA.setOnClickListener(new View.OnClickListener() {
@@ -98,6 +103,7 @@ public class QuestionActivity extends AppCompatActivity {
 
     public void quiz(){// id/answer/question/choice1/choice2/choice3/choice4/Japanese
                        // 0  1      2        3       4       5       6       7
+        countDown.start();
         try {
             Button nextButton = findViewById(R.id.nextButton);
             Intent former = getIntent();
@@ -139,10 +145,9 @@ public class QuestionActivity extends AppCompatActivity {
             resultView.setText("不正解です。正解は" + question.get(quizIndex).split("/", 0)[1]);
             answerView.setText(question.get(quizIndex).split("/", 0)[7]);
             changeButtonColor(alpha, Color.BLUE);
+            changeButtonColor(question.get(quizIndex).split("/", 0)[1], Color.RED);
             clickFlag = false;
         }
-
-        Button nextButton = findViewById(R.id.nextButton);
         nextButton.setVisibility(View.VISIBLE);
         nextButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -152,7 +157,7 @@ public class QuestionActivity extends AppCompatActivity {
                 clickFlag = true;
                 quizIndex++;
                 answerCount++;
-                changeButtonColor("e", Color.BLACK);
+                changeButtonColor("all", Color.BLACK);
                 quiz();
             }
         });
@@ -169,11 +174,35 @@ public class QuestionActivity extends AppCompatActivity {
             buttonC.setTextColor(c);
         }else if(alpha.equals("d")){
             buttonD.setTextColor(c);
-        }else{
+        }else if(alpha.equals("all")){
             buttonA.setTextColor(c);
             buttonB.setTextColor(c);
             buttonC.setTextColor(c);
             buttonD.setTextColor(c);
+        }
+    }
+
+
+    class CountDown extends CountDownTimer {
+
+        CountDown(long millisInFuture, long countDownInterval) {
+            super(millisInFuture, countDownInterval);
+        }
+
+        @Override
+        public void onFinish() {
+            if(clickFlag) {
+                clickFlag = false;
+                resultView.setText("時間切れです。正解は" + question.get(quizIndex).split("/", 0)[1]);
+                answerView.setText(question.get(quizIndex).split("/", 0)[7]);
+                changeButtonColor(question.get(quizIndex).split("/", 0)[1], Color.RED);
+                nextButton.setVisibility(View.VISIBLE);
+            }
+        }
+
+        @Override
+        public void onTick(long millisUntilFinished) {
+            timerView.setText("残り時間：" +  millisUntilFinished / 1000  + "秒");
         }
     }
 }
