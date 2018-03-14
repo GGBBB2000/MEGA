@@ -11,6 +11,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import java.io.BufferedReader;
 import java.io.File;
@@ -32,12 +33,16 @@ public class QuestionActivity extends AppCompatActivity {
     int quizIndex = 0;
     int answerCount = 0;
     CountDown countDown;
+    long countNumber, interval;
+    int progress;
+    ProgressBar progressBar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_question);
-        long countNumber = 15000;
-        long interval = 10;
+        countNumber = 15000;
+        interval = 10;
+        progressBar = findViewById(R.id.progressBar);
         countDown = new CountDown(countNumber, interval);
         questionView = findViewById(R.id.question);
         resultView = findViewById(R.id.result);
@@ -104,8 +109,10 @@ public class QuestionActivity extends AppCompatActivity {
     public void quiz(){// id/answer/question/choice1/choice2/choice3/choice4/Japanese
                        // 0  1      2        3       4       5       6       7
         countDown.start();
+        //progress = 15000;
         try {
-            Button nextButton = findViewById(R.id.nextButton);
+            nextButton = findViewById(R.id.nextButton);
+            progressBar.setProgress(progress);
             Intent former = getIntent();
             Intent intent = new Intent(getApplication(), resultActivity.class);
             if (quizIndex < question.size() && answerCount < former.getIntExtra("value", question.size())) {
@@ -202,7 +209,8 @@ public class QuestionActivity extends AppCompatActivity {
 
         @Override
         public void onTick(long millisUntilFinished) {
-            timerView.setText("残り時間：" +  millisUntilFinished / 1000  + "秒");
+            timerView.setText("残り時間：" +  millisUntilFinished / 1000  + "秒" );
+            progressBar.setProgress((int)(millisUntilFinished / 1000));
         }
     }
 }
